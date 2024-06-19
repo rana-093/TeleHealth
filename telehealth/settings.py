@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': "django.db.backends.postgresql_psycopg2",
         'NAME': 'telehealth',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
+        'PASSWORD': 'asdF1234',
+        'HOST': 'db',
         'PORT': '5432',
   }
 }
