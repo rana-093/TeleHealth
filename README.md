@@ -99,12 +99,24 @@ Create an availability for a doctor
 
 ## Appointment for a doctor:
 
-1. GET - http://localhost:8000/api/v1/appointments/upcoming_appointments/?doctor_id={id} -> For Upcoming appointments for a doctor
-2. GET - http://localhost:8000/api/v1/appointments/ -> Get all appointments
-3. POST - http://localhost:8000/api/v1/appointments/
-   body: {
-   "doctor": 1,
-   "patient": 2,
-   "appointment_date": "2024-06-19",
-   "appointment_time": "17:00"
-   }
+**POST** `/api/v1/appointments/`
+Create an appointment for a patient
+
+#### Request Body
+
+```json
+{
+  "doctor": 1,
+  "patient": 2,
+  "appointment_date": "2024-06-19",
+  "appointment_time": "17:00"
+}
+```
+**GET** `/api/v1/appointments/upcoming_appointments/?doctor_id={id}/`
+Upcoming appointments for a doctor with id: {id}
+
+**GET** `/api/v1/appointments/`
+Get all appointments
+
+**DELETE** `/api/v1/appointments/{id}`
+Delete an appointment
