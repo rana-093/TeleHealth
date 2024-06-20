@@ -97,7 +97,7 @@ Create an availability for a doctor
 }
 ```
 
-## Appointment for a doctor:
+## Appointment for a doctor
 
 **POST** `/api/v1/appointments/`
 Create an appointment for a patient
@@ -120,3 +120,37 @@ Get all appointments
 
 **DELETE** `/api/v1/appointments/{id}`
 Delete an appointment
+
+
+
+## Consultation for an appointment
+
+**POST** `/api/v1/consultations/`
+Create a consultations for an appointment
+
+#### Request Body
+
+```json
+{
+    "appointment": 1, 
+    "type": "suggestion",
+    "notes": "A demo note for the patient"
+}
+```
+**GET** `/api/v1/consultations/?appointment_id={id}`
+Consultation for a specfic appointment with id: {id}
+
+**GET** `/api/v1/consultations/`
+Get all consultations
+
+**DELETE** `/api/v1/consultations/{id}`
+Delete a consultations
+
+
+**PATCH** `/api/v1/consultations/{id}`
+Update a consultation
+```json
+{
+    "notes": "A demo note for the patient"
+}
+```

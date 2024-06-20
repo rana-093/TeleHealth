@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Person, Doctor, Patient, Appointment, Consultation, Availability
+from .models import Person, Doctor, Patient, Appointment, Availability, Consultation
 from django.contrib.auth.models import User
 from rest_framework.exceptions import ValidationError
 from django.shortcuts import get_object_or_404

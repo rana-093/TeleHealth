@@ -48,9 +48,7 @@ class Appointment(TimeStampMixin):
     appointment_time = models.TimeField()
     status = models.CharField(max_length=20, default='scheduled', choices=[(x, x) for x in status_choices])
 
-
 class Consultation(TimeStampMixin):
-    appointment = models.OneToOneField(Appointment, on_delete=models.DO_NOTHING, primary_key=True)
+    appointment = models.ForeignKey(Appointment, on_delete=models.DO_NOTHING, related_name='consultations')
     type = models.CharField(max_length=20, null=True, blank=True)
-    date = models.DateTimeField(null=True, blank=True)
     notes = models.TextField(null=True, blank=True)
