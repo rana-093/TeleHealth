@@ -1,6 +1,6 @@
 Run `docker-compose up --build` for quick deployment
 
-Base URL: **http://localhost:8080**
+Base URL: **http://localhost:8080/medai**
 
 ## Patient Endpoints
 
