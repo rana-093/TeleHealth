@@ -1,7 +1,7 @@
 Run `docker-compose up --build` or `docker compose up --build` depending on the `docker compose` version, for quick deployment
 
 
-Base URL: **http://localhost:8080/medai**
+Base URL: **http://localhost:8000/medai**
 
 
 ## AWS Deployment Architecture!
