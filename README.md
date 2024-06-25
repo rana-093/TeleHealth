@@ -4,7 +4,7 @@ Run `docker-compose up --build` or `docker compose up --build` depending on the 
 Base URL: **http://localhost:8080/medai**
 
 
-## AWS Architecture!
+## AWS Deployment Architecture!
 ![AWS Deployment Architecture](image.png)
 
 ## Patient Endpoints
